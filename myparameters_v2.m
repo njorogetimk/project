@@ -5,11 +5,13 @@
 fuzzy_controller = readfis('fuzzy_controller');
 
 % RAW data
-time = xlsread('power_v2_data.xlsx','B1:Y1');
-G_data = xlsread('power_v2_data.xlsx','B2:Y2');
-T_data = xlsread('power_v2_data.xlsx','B3:Y3');
-load_data = xlsread('power_v2_data.xlsx','B4:Y4');
-ut_price = xlsread('power_v2_data.xlsx','B5:Y5');
+time = xlsread('power_v2_data.xlsx','sheet3','A2:A49')';
+G_data = xlsread('power_v2_data.xlsx','sheet3','B2:B49')';
+T_data = xlsread('power_v2_data.xlsx','sheet3','C2:C49')';
+load_data = xlsread('power_v2_data.xlsx','sheet3','D2:D49')';
+ut_price_i = xlsread('power_v2_data.xlsx','sheet3','E2:E49')';
+max_p = max(ut_price_i);
+ut_price = ut_price_i/max_p; %Normalized ut_price
 
 % Manufacturers data sheet data Solar panel
 Pstc = 120;
@@ -21,7 +23,7 @@ Vstc = 18.1;
 
 % Battery parameters
 Q = 590; % Battery capacity
-SOC = 100; %Initial state of charge
+SOC = xlsread('power_v2_data.xlsx','sheet2','I2:I25')'; %Initial state of charge
 % Time vector
 % t = vct;
 % for i = 1:23
