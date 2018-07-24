@@ -43,13 +43,13 @@ MF5='VH':'trapmf',[900 1200 3400 3400]
 
 [Output1]
 Name='PowerToPurchase'
-Range=[0 1500]
+Range=[0 2020]
 NumMFs=5
-MF1='L':'trimf',[100 350 500]
-MF2='M':'trimf',[350 580 800]
-MF3='H':'trimf',[500 750 1000]
-MF4='VL':'trapmf',[0 0 100 350]
-MF5='VH':'trapmf',[800 1000 1500 1500]
+MF1='L':'trimf',[134.7 471.3 673.3]
+MF2='M':'trimf',[471.3 781.1 1077]
+MF3='H':'trimf',[673.3 1010 1347]
+MF4='VL':'trapmf',[0 0 134.7 471.3]
+MF5='VH':'trapmf',[1077 1347 2020 2720]
 
 [Rules]
 1 4 4, 3 (1) : 1
