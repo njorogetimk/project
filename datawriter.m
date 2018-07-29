@@ -11,7 +11,9 @@
 
 %% Write the data to excel
 filename = 'data.xlsx';
-max_pv = max(Pm.Data);
+BatSOC = soc.Data;      % The current SOC of the battery
+xlswrite(filename, BatSOC, 1, 'D')
+max_pv = max(pv_power.Data);
 max_ld = max(load_data);
 
 % Get the normalizing value for the powers; pv and load
@@ -25,10 +27,8 @@ t = time(2:length(time))';
 xlswrite(filename,t, 1, 'A')
 Load = load_data(2:length(load_data))'*100/nvl;  %Total hourly load
 xlswrite(filename, Load, 1, 'B')
-PVOut = Pm.Data*100/nvl;        % Amount of power PV provides
+PVOut = pv_power.Data*100/nvl;        % Amount of power PV provides
 xlswrite(filename, PVOut, 1, 'C')
-BatSOC = soc.Data;      % The current SOC of the battery
-xlswrite(filename, BatSOC, 1, 'D')
 NetLoad = net_load_out.Data*100/nvl;    % The extra load to cater for
 xlswrite(filename, NetLoad, 1, 'E')
 UtPrice = price_out.Data*100;       % The normalized utility load
