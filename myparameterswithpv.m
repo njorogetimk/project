@@ -1,3 +1,5 @@
+clear
+clc
 
 fuzzy_controller = readfis('fuzzy_controller');
 
@@ -19,7 +21,7 @@ Istc = 6.6;
 Vstc = 18.1;
 
 % Battery parameters
-Q = 340 % Battery capacity
+Q = 340; % Battery capacity
 SOC = xlsread('power_v2_data.xlsx','sheet2','I2:I25')'; %Initial state of charge
 % Time vector
 % t = vct;
