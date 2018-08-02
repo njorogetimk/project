@@ -1,26 +1,27 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="3273015055" file="C:\Users\timothy\Desktop\MATLAB\project\final\SimulationApp2.prj" location="C:\Users\timothy\Desktop\MATLAB\project\final" name="SimulationApp2" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="4291298018" file="C:\Users\timothy\Desktop\MATLAB\project\final\SimulationApp2.prj" location="C:\Users\timothy\Desktop\MATLAB\project\final" name="SimulationApp2" target="target.mlapps" target-name="Package App">
     <param.appname>SimulationApp2</param.appname>
     <param.authnamewatermark>Timothy Njoroge</param.authnamewatermark>
-    <param.email>njorogetimk@gmal.com</param.email>
+    <param.email>njorogetimk@gmail.com</param.email>
     <param.company />
     <param.icon />
     <param.icons />
-    <param.summary>The Simulation app of fuzzy logic home energy disparch controller</param.summary>
-    <param.description>First Run both simulations. After running each simulation the status label on the bottom changes to 'simulation with PV ended' or 'Simulation without PV ended'. The select the data to use for plotting the graphs. The title of the graph changes depending on the data selected.
-The clear graph button clears the graph</param.description>
-    <param.screenshot>C:\Users\timothy\AppData\Local\Temp\tp65679e13_40ab_409f_b5fc_411abcec75ee.png</param.screenshot>
+    <param.summary />
+    <param.description />
+    <param.screenshot>C:\Users\timothy\AppData\Local\Temp\tpaa310433_b568_4fbc_9a89_8f0f8bf5e19b.png</param.screenshot>
     <param.version>1.0</param.version>
     <param.products.name />
     <param.products.id />
     <param.products.version />
     <param.platforms />
     <param.output>C:\Users\timothy\Desktop\MATLAB\project\final</param.output>
-    <param.guid>9e31cb16-0a07-49b8-bbfc-8ed96ffe9f80</param.guid>
+    <param.guid>efba60d0-c6b2-4ef6-b4a3-3200e7488452</param.guid>
     <unset>
       <param.company />
       <param.icon />
       <param.icons />
+      <param.summary />
+      <param.description />
       <param.version />
       <param.products.name />
       <param.products.id />
@@ -34,13 +35,12 @@ The clear graph button clears the graph</param.description>
     <fileset.depfun />
     <fileset.resources>
       <file>${PROJECT_ROOT}\fuzzy_controller.fis</file>
-      <file>${PROJECT_ROOT}\ModelWithoutPV.slx</file>
-      <file>${PROJECT_ROOT}\ModelWithPV.slx</file>
+      <file>${PROJECT_ROOT}\ModelWithoutPVs.slx</file>
+      <file>${PROJECT_ROOT}\ModelWithPVs.slx</file>
       <file>${PROJECT_ROOT}\myparametersnopv.m</file>
       <file>${PROJECT_ROOT}\myparameterswithpv.m</file>
       <file>${PROJECT_ROOT}\power_v2_data.xlsx</file>
       <file>${PROJECT_ROOT}\README.md</file>
-      <file>${PROJECT_ROOT}\SimulationApp2.prj</file>
     </fileset.resources>
     <fileset.package />
     <build-deliverables>
