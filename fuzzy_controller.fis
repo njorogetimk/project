@@ -16,40 +16,40 @@ Name='eprice'
 Range=[0 1]
 NumMFs=5
 MF1='VL':'trapmf',[0 0 0.1 0.25]
-MF2='L':'trimf',[0.1 0.25 0.5]
+MF2='L':'trimf',[0.1 0.25 0.45]
 MF3='VH':'trapmf',[0.75 0.9 1 1]
-MF4='F':'trimf',[0.25 0.5 0.75]
-MF5='H':'trimf',[0.5 0.75 0.9]
+MF4='F':'trimf',[0.35 0.5 0.65]
+MF5='H':'trimf',[0.6 0.75 0.9]
 
 [Input2]
 Name='soc'
 Range=[0 100]
 NumMFs=5
-MF1='M':'trimf',[55 60 70]
-MF2='L':'trimf',[50 55 60]
-MF3='H':'trimf',[60 70 85]
+MF1='M':'trimf',[60 65 70]
+MF2='L':'trimf',[50 55 65]
+MF3='H':'trimf',[65 75 85]
 MF4='VL':'trapmf',[0 0 50 55]
-MF5='VH':'trapmf',[70 85 100 100]
+MF5='VH':'trapmf',[80 90 100 100]
 
 [Input3]
 Name='netload'
-Range=[0 3400]
+Range=[0 4000]
 NumMFs=5
-MF1='L':'trimf',[200 400 600]
-MF2='M':'trimf',[400 600 900]
-MF3='H':'trimf',[600 900 1200]
-MF4='VL':'trapmf',[0 0 200 400]
-MF5='VH':'trapmf',[900 1200 3400 3400]
+MF1='L':'trimf',[500 1000 1500]
+MF2='M':'trimf',[1000 1500 2000]
+MF3='H':'trimf',[1500 2000 2500]
+MF4='VL':'trapmf',[0 0 500 1000]
+MF5='VH':'trapmf',[2000 2500 4000 4000]
 
 [Output1]
 Name='PowerToPurchase'
 Range=[0 2020]
 NumMFs=5
-MF1='L':'trimf',[134.7 471.3 673.3]
-MF2='M':'trimf',[471.3 781.1 1077]
-MF3='H':'trimf',[673.3 1010 1347]
-MF4='VL':'trapmf',[0 0 134.7 471.3]
-MF5='VH':'trapmf',[1077 1347 2020 2720]
+MF1='L':'trimf',[130 450 650]
+MF2='M':'trimf',[450 750 1050]
+MF3='H':'trimf',[650 1000 1350]
+MF4='VL':'trapmf',[0 0 130 450]
+MF5='VH':'trapmf',[1050 1350 2020 2020]
 
 [Rules]
 1 4 4, 3 (1) : 1
